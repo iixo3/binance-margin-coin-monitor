@@ -1,0 +1,15 @@
+# Collected readings: only the June 2026 sample run is kept
+data/*
+!data/monitor.db
+
+__pycache__/
+*.pyc
+.claude/
+.DS_Store
+
+# Never commit secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem

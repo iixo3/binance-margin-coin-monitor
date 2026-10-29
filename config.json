@@ -1,0 +1,25 @@
+{
+  "poll_interval_sec": 300,
+  "history_window_sec": 604800,
+  "alerts_enabled": false,
+
+  "modules": {
+    "margin_inventory": {
+      "enabled": true,
+      "watchlist": ["PHA"],
+      "drained_alert_pct": 0.5
+    },
+    "margin_rate": {
+      "enabled": true,
+      "watchlist": ["PHA"],
+      "rate_alert_hourly": 0.0005,
+      "rate_z_alert": 3.0
+    },
+    "volume_zscore": {
+      "enabled": true,
+      "symbols": ["PHAUSDT"],
+      "baseline_days": 30,
+      "z_alert": 3.0
+    }
+  }
+}
